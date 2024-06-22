@@ -26,7 +26,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import secfivid from "../assets/images/secfivid.mp4"
 import CheckIcon from '@mui/icons-material/Check';
 import CallMadeIcon from '@mui/icons-material/CallMade';
@@ -251,15 +251,18 @@ useEffect(()=>{
 
 
   writeLoop();
-  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-  setWidth2(carousel2.current.scrollWidth - carousel2.current.offsetWidth)
+
+},[width])
+
+useLayoutEffect(()=>{
+  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  setWidth2(carousel2.current.scrollWidth - carousel2.current.offsetWidth);
 },[width])
 
 
  
 document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('video').play();
-    
 
 
  })
