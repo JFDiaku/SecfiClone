@@ -1,1 +1,1 @@
-Hello Person 👋🤓. I Know this code is ugly , i just wanted to see what all this Tailwild fuss was about. I'll clean it up, promise. Ok bye👋🤓.
+![secfi](https://github.com/user-attachments/assets/ae88b52a-94b8-49ae-94d0-6bd57453a098)
