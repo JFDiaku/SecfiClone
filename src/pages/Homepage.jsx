@@ -255,9 +255,13 @@ useEffect(()=>{
 },[width])
 
 useLayoutEffect(()=>{
-  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  setWidth2(carousel2.current.scrollWidth - carousel2.current.offsetWidth);
-},[width])
+  setTimeout(() => {
+    if (carousel.current && carousel2.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+      setWidth2(carousel2.current.scrollWidth - carousel2.current.offsetWidth);
+    }
+  }, 10);
+},[])
 
 
  
