@@ -32,7 +32,7 @@ function App() {
     
     <Routes>
    
-      <Route path='/' element={<Homepage isMobileScreen={isMobileScreen} mobileNav={mobileNav} setMobileNav={setMobileNav} />}/>
+      <Route path='/SecfiClone' element={<Homepage isMobileScreen={isMobileScreen} mobileNav={mobileNav} setMobileNav={setMobileNav} />}/>
 
     </Routes>
     <Footer isMobileScreen={isMobileScreen} />
